@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Document</title>
+<!--        <link rel="stylesheet" href="css/style.css">-->
+        <style>
+            h1{
+                background:#5314ff; /*ctrl+E 選色*/
+                color:#fff;
+                font-size: 18px;
+                padding: 20px;
+                margin: 30px;
+            }
+            ul{
+                list-style:none;
+                background: #eee;
+                margin:20px auto;/*auto 用在有設定width的*/
+                padding:30px;
+                width: 50%;
+            }
+            #shit{
+                background: #BBB;
+            }
+            a,span{
+                /* 表示 a和span樣式一樣*/
+                background: #333;
+                color: #fff;
+                padding:20px;
+                width:100px; /*無效, 因為是行內元素*/
+                height:200px; /*無效*/
+                display: inline-block;
+            }
+            .dog{
+                background: #e621d7;
+            }
+            body{
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>title</h1>
+        <ul>
+          <li>item1</li>
+          <li>item2</li>
+          <li>item3</li>
+          <li>item4</li>    
+        </ul>
+        <a id="shit">123</a><!-- 這個註解可以消除因為斷行所產生的空白
+        --><span class="dog">456</span>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
